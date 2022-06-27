@@ -29,6 +29,14 @@ public class LineComparison {
         System.out.println("Length of the line : "+length1);
         int result = length.compareTo(length1);
         System.out.println(result);
+
+        if (result == 0) {
+            System.out.println("length = length1");
+        } else if (result > 0) {
+            System.out.println("length > length1");
+        } else if (result < 0) {
+            System.out.println("length < length1");
+        }
     }
     public static int getInputFromUser(String number) {
         System.out.println("Enter the " + number + " line co-ordinates");
