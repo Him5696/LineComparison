@@ -15,6 +15,20 @@ public class LineComparison {
         double y = Math.pow((y2 - y1), 2);
         Double length = (Math.sqrt(x + y));
         System.out.println("Length of the line : "+length);
+
+        System.out.println("Enter Second line Co-ordinates");
+        System.out.println("Enter the first (a1,b1) point");
+        int a1 = getInputFromUser("a1");
+        int b1 = getInputFromUser("b1");
+        System.out.println("Enter the second (a2, b2) point");
+        int a2 = getInputFromUser("a2");
+        int b2 = getInputFromUser("b2");
+        double a = Math.pow((a2 - a1), 2);
+        double b = Math.pow((b2 - b1), 2);
+        Double length1 = (Math.sqrt(a + b));
+        System.out.println("Length of the line : "+length1);
+        int result = length.compareTo(length1);
+        System.out.println(result);
     }
     public static int getInputFromUser(String number) {
         System.out.println("Enter the " + number + " line co-ordinates");
